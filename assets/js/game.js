@@ -50,6 +50,16 @@ choices.forEach(function (choice) {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
 
-        getNewQuestion();
+        let classToApply = "incorrect"
+        if (selectedAnswer == currentQuestion.answer) {
+            classToApply = "correct";
+        };
+
+        selectedChoice.parentElement.classList.add(classToApply);
+
+        setTimeout(function () {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 1000);
     });
 });
