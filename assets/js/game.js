@@ -4,6 +4,9 @@ const progressText = document.getElementById("progress-text");
 const scoreText = document.getElementById("score");
 const progressBarFull = document.getElementById("progress-bar-full");
 
+const correctBonus = 10;
+const maxQuestions = 3;
+
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -38,18 +41,12 @@ let questions = [
   }
 ];
 
-// CONSTANTS
-const correctBonus = 10;
-const maxQuestions = 3;
-
 function startGame() {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...questions];
     getNewQuestion();
 };
-
-startGame();
 
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
@@ -74,7 +71,6 @@ function getNewQuestion() {
 
     acceptingAnswers = true;
 };
-
 
 choices.forEach(function (choice) {
     choice.addEventListener("click", function (e) {
@@ -106,3 +102,5 @@ function incrementScore(num) {
     score += num;
     scoreText.innerText = score;
 };
+
+startGame();
