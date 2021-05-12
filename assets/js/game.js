@@ -50,6 +50,7 @@ function startGame() {
 
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
+        localStorage.setItem("mostRecentScore", score);
         //Go to the end page
         return window.location.assign("end.html");
     };
