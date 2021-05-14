@@ -127,3 +127,12 @@ input {
 input::placeholder {
     color: #aaa;
 }
+
+label {
+    font-size: 1.7rem;
+}
+
+select {
+    margin-bottom: 1rem;
+    width: 20rem;
+}

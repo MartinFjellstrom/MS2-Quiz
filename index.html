@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
     <div class="container">
         <div id="home" class="flex-center flex-column">
             <h1>Quick quiz!</h1>
-            <a href="game.html" class="btn">Play</a>
+            <form id="game-settings">
+                <label for="difficulty">Pick your difficutly:</label>
+                <select id="difficulty" name="difficulty">
+                    <option class="difficulty-option" value="easy">Easy</option>
+                    <option class="difficulty-option" value="medium">Medium</option>
+                    <option class="difficulty-option" value="hard">Hard</option>
+                </select>
+                <label for="quantity">Pick number of quetions:</label>
+                <select id="quantity" name="quantity">
+                    <option class="quantity-option" value="5">5</option>
+                    <option class="quantity-option" value="10">10</option>
+                    <option class="quantity-option" value="20">20</option>
+                </select>
+                <label for="category">Pick your category:</label>
+                <select id="category" name="category">
+                    <option class="category-option" value="12">Music</option>
+                    <option class="category-option" value="9">General Knowledge</option>
+                    <option class="category-option" value="15">Video Games</option>
+                    <option class="category-option" value="22">Geography</option>
+                    <option class="category-option" value="17">Science & Nature</option>
+                </select>
+            </form>
+            <a href="game.html" class="btn" id="play-btn">Play</a>
             <a href="highscores.html" class="btn">Highscores</a>
         </div>
     </div>
+    <script src="/assets/js/game_settings.js"></script>
 </body>
+
 </html>

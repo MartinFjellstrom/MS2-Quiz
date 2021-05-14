@@ -7,7 +7,6 @@ const loader = document.getElementById("loader");
 const game = document.getElementById("game");
 
 const correctBonus = 10;
-const maxQuestions = 5;
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -17,7 +16,11 @@ let availableQuestions = [];
 
 let questions = [];
 
-fetch("https://opentdb.com/api.php?amount=20&category=9&difficulty=easy&type=multiple")
+maxQuestions = localStorage.getItem("maxQuestions");
+difficulty = localStorage.getItem("difficulty");
+category = localStorage.getItem("category");
+
+fetch(`https://opentdb.com/api.php?amount=50&category=${category}&difficulty=${difficulty}&type=multiple`)
     .then(function (res) {
         return res.json();
     })
