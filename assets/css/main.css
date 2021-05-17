@@ -1,13 +1,16 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 :root {
     font-size: 62.5%;
-    background-color: #cee8ff;
+    background-image: url("../images/background.jpg");
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     color: #333;
 }
 
@@ -20,24 +23,35 @@ h4 {
 
 h1 {
     font-size: 5.4rem;
-    color: #56a5eb;
-    margin-bottom: 5rem;
-}
-
-h1 > span {
-    font-size: 2.4rem;
-    font-weight: 500;
+    color: #333;
+    margin-bottom: 3rem;
 }
 
 h2 {
-    font-size: 4.2rem;
+    font-size: 3.2rem;
     font-weight: 700;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
 }
 
 h3 {
     font-size: 2.8rem;
     font-weight: 500;
+}
+
+#main-title {
+    font-size: 4.8rem;
+}
+
+/* BOX STYLES */
+
+.box-border {
+    border: 3px ridge yellow;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 1rem;
+    max-width: 35rem;
+    max-height: 50rem;
+    background-color: lightgray;
 }
 
 /* UTILITIES */
@@ -48,13 +62,8 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 80rem;
+    max-width: 90rem;
     margin: 0 auto;
-    padding: 2rem;
-}
-
-.container > * {
-    width: 100%;
 }
 
 .flex-column {
@@ -129,7 +138,8 @@ input::placeholder {
 }
 
 label {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+    text-align: center;
 }
 
 select {

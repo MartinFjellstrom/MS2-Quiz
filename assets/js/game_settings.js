@@ -4,11 +4,11 @@ let maxQuestions = 5;
 let difficulty = "easy";
 let category = 12;
 
-document.addEventListener("mousedown", function () {
+function handleSettings(){
     pickDifficulty();
     pickMaxQuestions();
     pickCategory();
-});
+};
 
 function pickDifficulty() {
   x = document.getElementById("difficulty").selectedIndex;

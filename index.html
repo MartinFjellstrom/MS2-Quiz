@@ -10,8 +10,8 @@
 
 <body>
     <div class="container">
-        <div id="home" class="flex-center flex-column">
-            <h1>Quick quiz!</h1>
+        <div class="flex-center flex-column box-border">
+            <h1 id="main-title">Quick quiz!</h1>
             <form id="game-settings">
                 <label for="difficulty">Pick your difficutly:</label>
                 <select id="difficulty" name="difficulty">
@@ -34,7 +34,7 @@
                     <option class="category-option" value="17">Science & Nature</option>
                 </select>
             </form>
-            <a href="game.html" class="btn" id="play-btn">Play</a>
+            <a href="game.html" class="btn" id="play-btn" onclick='handleSettings()'>Play</a>
             <a href="highscores.html" class="btn">Highscores</a>
         </div>
     </div>

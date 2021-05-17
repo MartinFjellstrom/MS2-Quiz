@@ -1,3 +1,14 @@
+.book {
+    background-image: url("../images/open_book1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#game {
+    width: 85%;
+    max-height: 70rem;
+}
+
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -81,4 +92,40 @@
     100% {
         transform: rotate(360deg);
     }
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    #question {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #game {
+        width: 95%;
+    }
+    
+    #score {
+        font-size: 4rem;
+    }
+
+    #progress-bar {
+        height: 3rem;
+    }
+
+}
+
+@media (max-width: 512px) {
+    #question {
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+
+    .choice-container {
+    margin-bottom: 0.2rem;
+    font-size: 1.4rem;
+}
+
 }

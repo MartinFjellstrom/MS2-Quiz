@@ -5,8 +5,14 @@
 }
 
 .high-score {
+    color: antiquewhite;
     font-size: 2.8rem;
     margin-bottom: 0.5rem;
+}
+
+.highscore-header {
+    color: antiquewhite;
+    font-size: 3.2rem;
 }
 
 .high-score:hover {
