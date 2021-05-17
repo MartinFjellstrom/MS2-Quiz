@@ -1,5 +1,5 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap');
 
 :root {
     font-size: 62.5%;
@@ -10,7 +10,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Gentium Book Basic', serif;
     color: #333;
 }
 
@@ -45,13 +45,13 @@ h3 {
 /* BOX STYLES */
 
 .box-border {
-    border: 3px ridge yellow;
+    border: 5px ridge rgb(184, 149, 86);
     width: 100vw;
     height: 100vh;
     border-radius: 1rem;
     max-width: 35rem;
-    max-height: 50rem;
-    background-color: lightgray;
+    max-height: 55rem;
+    background-color: antiquewhite;
 }
 
 /* UTILITIES */
@@ -95,16 +95,17 @@ h3 {
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #56a5eb;
+    border: 0.1rem solid #333;
+    border-radius: 1.5rem;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #56a5eb;
+    color: #333;
     background-color: white;
 }
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(118, 126, 10, 0.5);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
@@ -138,11 +139,17 @@ input::placeholder {
 }
 
 label {
-    font-size: 1.6rem;
-    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
 }
 
 select {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     width: 20rem;
+    height: 2.6rem;
+    font-size: 1.6rem;
+}
+
+#game-settings {
+    margin-bottom: 3rem;
 }
