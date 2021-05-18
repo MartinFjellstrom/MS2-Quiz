@@ -42,6 +42,10 @@ h3 {
     font-size: 4.8rem;
 }
 
+#score-header {
+    margin-bottom: 0.2rem;
+}
+
 /* BOX STYLES */
 
 .box-border {
