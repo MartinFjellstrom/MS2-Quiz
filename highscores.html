@@ -14,32 +14,42 @@
     <div class="container blackboard">
         <div class="highscore-settings">
             <div id="number-of-questions" class="highscore-check">
-                <label class="">5
+                <label class="check-label">5
                     <input type="checkbox" checked="checked">
                     <span class="checkmark"></span>
                 </label>
-                <label class="">10
+                <label class="check-label">10
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="">20
+                <label class="check-label">20
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
             </div>
             <div id="question-difficulty" class="highscore-check">
-                <label class="">Easy
+                <label class="check-label">Easy
                     <input type="checkbox" checked="checked">
                     <span class="checkmark"></span>
                 </label>
-                <label class="">Medium
+                <label class="check-label">Medium
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <label class="">Hard
+                <label class="check-label">Hard
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
+            </div>
+            <div id="category" class="flex-column flex-center">
+                <label for="highscore-category">Category</label>
+                <select name="highscore-category" id="highscore-category">
+                    <option class="setting-category-option" value="12">Music</option>
+                    <option class="setting-category-option" value="9">General Knowledge</option>
+                    <option class="setting-category-option" value="15">Video Games</option>
+                    <option class="setting-category-option" value="22">Geography</option>
+                    <option class="setting-category-option" value="17">Science & Nature</option>
+                </select>
             </div>
         </div>
         <div id="high-scores" class="flex-center flex-column">
