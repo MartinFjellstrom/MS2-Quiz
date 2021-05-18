@@ -1,21 +1,54 @@
+/* FONTS */
+@font-face {
+    font-family: chalkFont;
+    src: url("../fonts/chalk_font.ttf");
+}
+
 #high-scores-list {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 4rem;
 }
 
 .high-score {
-    color: #333;
+    color: #FBF7F5;
+    ;
     font-size: 2.8rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: chalkFont;
 }
 
 .highscore-header {
-    color: #333;
+    color: #FBF7F5;
     font-size: 3.2rem;
+    font-family: chalkFont;
+    margin-bottom: 7rem;
 }
 
 .high-score:hover {
     cursor: pointer;
     transform: scale(1.025);
+}
+
+.blackboard {
+    background-image: url("../images/blackboard.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blackboard-btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    margin-top: 7rem;
+    text-decoration: none;
+    color: #FBF7F5;
+    background-color: none;
+    font-family: chalkFont;
+}
+
+.blackboard-btn:hover {
+    cursor: pointer;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
