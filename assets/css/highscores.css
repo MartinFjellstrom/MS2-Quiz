@@ -40,9 +40,7 @@
 .blackboard-btn {
     font-size: 3.4rem;
     padding: 1rem 0;
-    border: #FBF7F5 outset 0.1rem;
-    border-radius: 45%;
-    width: 20rem;
+    width: 25rem;
     text-align: center;
     margin-top: 3rem;
     text-decoration: none;
@@ -53,6 +51,6 @@
 
 .blackboard-btn:hover {
     cursor: pointer;
-    transform: translateY(-0.1rem);
+    transform: translateY(-0.1rem) scale(1.2, 1.2);
     transition: transform 150ms;
 }
