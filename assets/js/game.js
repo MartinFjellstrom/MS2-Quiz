@@ -91,20 +91,25 @@ choices.forEach(function (choice) {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset["number"];
+        const correctAnswer = currentQuestion.answer.toString();
 
         let classToApply = "incorrect"
-        if (selectedAnswer == currentQuestion.answer) {
+        if (selectedAnswer === correctAnswer) {
             classToApply = "correct";
         };
-
+        
         if (classToApply === "correct") {
             incrementScore(correctBonus);
-        }
-
+        };
+        
+        if (selectedAnswer !== correctAnswer){
+            choices[correctAnswer - 1].parentElement.classList.add("correct");
+        };
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(function () {
             selectedChoice.parentElement.classList.remove(classToApply);
+            choices[correctAnswer - 1].parentElement.classList.remove("correct");
             getNewQuestion();
         }, 1000);
     });
