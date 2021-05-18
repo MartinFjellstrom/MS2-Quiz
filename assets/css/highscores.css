@@ -1,7 +1,8 @@
 /* FONTS */
 @font-face {
     font-family: chalkFont;
-    src: url("../fonts/chalk_font.ttf");
+    src: url("../fonts/stylish_marker.ttf");
+    font-weight: 400;
 }
 
 #high-scores-list {
@@ -19,9 +20,10 @@
 
 .highscore-header {
     color: #FBF7F5;
-    font-size: 3.2rem;
+    font-size: 6rem;
     font-family: chalkFont;
-    margin-bottom: 7rem;
+    margin-bottom: 4.2rem;
+    font-weight: 100;
 }
 
 .high-score:hover {
@@ -36,11 +38,13 @@
 }
 
 .blackboard-btn {
-    font-size: 1.8rem;
+    font-size: 3.4rem;
     padding: 1rem 0;
+    border: #FBF7F5 outset 0.1rem;
+    border-radius: 45%;
     width: 20rem;
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 3rem;
     text-decoration: none;
     color: #FBF7F5;
     background-color: none;
