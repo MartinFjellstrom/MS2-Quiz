@@ -12,10 +12,40 @@
 
 <body>
     <div class="container blackboard">
+        <div class="highscore-settings">
+            <div id="number-of-questions" class="highscore-check">
+                <label class="">5
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="">10
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="">20
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div id="question-difficulty" class="highscore-check">
+                <label class="">Easy
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="">Medium
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="">Hard
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
         <div id="high-scores" class="flex-center flex-column">
             <h1 id="final-score" class="highscore-header">High Scores</h1>
             <ul id="high-scores-list"></ul>
-            <a href="index.html" class="blackboard-btn">-> Back to Home <-< /a>
+            <a href="index.html" class="blackboard-btn">- Back to Home -</a>
         </div>
     </div>
     <script src="/assets/js/highscores.js"></script>

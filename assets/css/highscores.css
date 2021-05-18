@@ -5,6 +5,12 @@
     font-weight: 400;
 }
 
+/* HIGH SCORES */
+
+#high-scores {
+    width: 50%;
+}
+
 #high-scores-list {
     list-style: none;
     padding-left: 0;
@@ -35,6 +41,7 @@
     background-image: url("../images/blackboard.png");
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 75rem;
 }
 
 .blackboard-btn {
@@ -53,4 +60,19 @@
     cursor: pointer;
     transform: translateY(-0.1rem) scale(1.2, 1.2);
     transition: transform 150ms;
+}
+
+/* SETTINGS */
+
+.highscore-settings {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 37.5rem;
+}
+
+.highscore-check {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

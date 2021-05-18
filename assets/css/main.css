@@ -120,16 +120,30 @@ h3 {
     transform: none;
 }
 
-/* FORM */
+/* GAME SETTINGS FORM */
 
-form {
+#game-settings {
+    margin-bottom: 3rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-input {
+#game-settings>label {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+}
+
+#game-settings>select {
+    margin-bottom: 2rem;
+    width: 20rem;
+    height: 2.6rem;
+    font-size: 1.6rem;
+}
+/* END PAGE FORM */
+
+#username {
     margin-bottom: 1rem;
     width: 20rem;
     padding: 1.5rem;
@@ -140,20 +154,4 @@ input {
 
 input::placeholder {
     color: #aaa;
-}
-
-label {
-    font-size: 2rem;
-    margin-bottom: 0.7rem;
-}
-
-select {
-    margin-bottom: 2rem;
-    width: 20rem;
-    height: 2.6rem;
-    font-size: 1.6rem;
-}
-
-#game-settings {
-    margin-bottom: 3rem;
 }

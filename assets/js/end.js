@@ -6,6 +6,10 @@ const mostRecentScore = localStorage.getItem("mostRecentScore");
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const maxHighScores = 5;
 
+maxQuestions = localStorage.getItem("maxQuestions");
+difficulty = localStorage.getItem("difficulty");
+category = localStorage.getItem("category");
+
 finalScore.innerText = mostRecentScore;
 
 username.addEventListener("keyup", function () {
@@ -17,7 +21,10 @@ function saveHighScore(e) {
 
     const newScore = {
         score: mostRecentScore,
-        name: username.value
+        name: username.value,
+        maxQuestions: maxQuestions,
+        difficulty: difficulty,
+        category: category
     };
     highScores.push(newScore);
     highScores.sort(function (a, b) {
