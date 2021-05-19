@@ -1,6 +1,8 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic&display=swap');
 
+/* ROOT AND MAIN STYLES */
+
 :root {
     font-size: 62.5%;
     background-image: url("../images/background.jpg");
@@ -13,6 +15,8 @@
     font-family: 'Gentium Book Basic', serif;
     color: #333;
 }
+
+/* HEADERS */
 
 h1,
 h2,
@@ -120,12 +124,37 @@ h3 {
     transform: none;
 }
 
+#feedback-btn {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+/* MODAL */
+
+#modal-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* FEEDBACK FORM */
 
 #feedback-form {
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: grey;
     padding: 2rem;
 }
