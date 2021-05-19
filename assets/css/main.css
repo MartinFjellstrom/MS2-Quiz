@@ -141,7 +141,15 @@ h3 {
     height: 2.6rem;
     font-size: 1.6rem;
 }
+
 /* END PAGE FORM */
+
+#end-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #username {
     margin-bottom: 1rem;

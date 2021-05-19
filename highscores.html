@@ -13,44 +13,43 @@
 <body>
     <div class="container blackboard">
         <div class="highscore-settings">
-            <div id="number-of-questions" class="highscore-check">
-                <label class="check-label">5
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="check-label">10
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="check-label">20
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-            <div id="question-difficulty" class="highscore-check">
-                <label class="check-label">Easy
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="check-label">Medium
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <label class="check-label">Hard
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-            </div>
-            <div id="category" class="flex-column flex-center">
-                <label for="highscore-category">Category</label>
-                <select name="highscore-category" id="highscore-category">
-                    <option class="setting-category-option" value="12">Music</option>
-                    <option class="setting-category-option" value="9">General Knowledge</option>
-                    <option class="setting-category-option" value="15">Video Games</option>
-                    <option class="setting-category-option" value="22">Geography</option>
-                    <option class="setting-category-option" value="17">Science & Nature</option>
-                </select>
-            </div>
+            <form action="" class="highscore-form">
+                <div id="number-of-questions" class="highscore-check">
+                    <label class="questions-label check">5
+                        <input type="radio" value="5" name="number-of-questions" class="questions-check"
+                            checked="checked">
+                    </label>
+                    <label class="questions-label check">10
+                        <input type="radio" value="10" name="number-of-questions" class="questions-check">
+                    </label>
+                    <label class="questions-label check">20
+                        <input type="radio" value="20" name="number-of-questions" class="questions-check">
+                    </label>
+                </div>
+                <div id="question-difficulty" class="highscore-check">
+                    <label class="difficulty-label check">Easy
+                        <input type="radio" value="easy" name="question-difficulty" class="difficulty-check"
+                            checked="checked">
+                    </label>
+                    <label class="difficulty-label check">Medium
+                        <input type="radio" value="medium" name="question-difficulty" class="difficulty-check">
+                    </label>
+                    <label class="difficulty-label check">Hard
+                        <input type="radio" value="hard" name="question-difficulty" class="difficulty-check">
+                    </label>
+                </div>
+                <div id="category" class="flex-column flex-center">
+                    <label for="highscore-category">Category</label>
+                    <select name="highscore-category" id="highscore-category">
+                        <option class="setting-category-option" value="12">Music</option>
+                        <option class="setting-category-option" value="9">General Knowledge</option>
+                        <option class="setting-category-option" value="15">Video Games</option>
+                        <option class="setting-category-option" value="22">Geography</option>
+                        <option class="setting-category-option" value="17">Science & Nature</option>
+                    </select>
+                    <button type="submit" onclick="findHighscore(event)">Check High Score</button>
+                </div>
+            </form>
         </div>
         <div id="high-scores" class="flex-center flex-column">
             <h1 id="final-score" class="highscore-header">High Scores</h1>
