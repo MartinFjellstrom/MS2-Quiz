@@ -120,6 +120,16 @@ h3 {
     transform: none;
 }
 
+/* FEEDBACK FORM */
+
+#feedback-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: grey;
+    padding: 2rem;
+}
+
 /* GAME SETTINGS FORM */
 
 #game-settings {

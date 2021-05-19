@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizology</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <link rel="shortcut icon" href="/assets/images/education1.png" type="image/png">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
@@ -39,7 +40,24 @@
             <a href="highscores.html" class="btn">Highscores</a>
         </div>
     </div>
-    
+    <div>
+        <button id="feedback-btn">Give me some feedback!</button>
+        <div id="modal-container">
+            <div class="modal">
+                <form id="feedback-form" class="flex-center flex-column">
+                    <input type="hidden" name="contact_number" required>
+                    <label>Name</label>
+                    <input type="text" name="user_name" required>
+                    <label>Email</label>
+                    <input type="email" name="user_email" required>
+                    <label>Message</label>
+                    <textarea name="message"></textarea>
+                    <input type="submit" value="Send" id="close">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/emailjs.js"></script>
     <script src="/assets/js/game_settings.js"></script>
 </body>
 
