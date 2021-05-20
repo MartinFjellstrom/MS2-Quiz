@@ -163,11 +163,69 @@ h3 {
     pointer-events: auto;
 }
 
+#modal-frame {
+    width: 100vw;
+    height: 100vh;
+    max-width: 38rem;
+    max-height: 49rem;
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
+    transform: rotate(90deg);
+}
+
+#close-btn i {
+    font-size: 2.8rem;
+    float: right;
+    margin-right: 1rem;
+}
+
+#close-btn i:hover {
+    cursor: pointer;
+    color: white;
+    transition: color 200ms ease-in;
+}
+
+#modal-btn {
+    width: 40%;
+    height: 3rem;
+    align-self: center;
+    margin-top: 2rem;
+    border: 0.1rem solid #333;
+    border-radius: 5rem;
+    font-size: 2rem;
+    background-color: white;
+    text-decoration: none;
+}
+
+#modal-btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(184, 149, 86, 0.7);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
 /* FEEDBACK FORM */
 
 #feedback-form {
-    background-color: grey;
+    background-color: antiquewhite;
     padding: 2rem;
+    width: 100vw;
+    height: 100vh;
+    max-width: 50rem;
+    max-height: 39rem;
+    border-radius: 1rem;
+}
+
+#feedback-form label {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+#feedback-form input,
+textarea {
+    font-size: 1.6rem;
 }
 
 /* GAME SETTINGS FORM */
