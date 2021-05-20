@@ -1,5 +1,6 @@
 const feedbackBtn = document.getElementById("feedback-btn");
 const modalContainer = document.getElementById("modal-container");
+const closeBtn = document.getElementById("close-btn")
 
 emailjs.init('user_ReH5lf2lq5p0hrFp6l6BE');
 
@@ -21,4 +22,8 @@ window.onload = function () {
 
 feedbackBtn.addEventListener("click", function(){
     modalContainer.classList.add("show");
+});
+
+closeBtn.addEventListener("click", function(){
+    modalContainer.classList.remove("show");
 });

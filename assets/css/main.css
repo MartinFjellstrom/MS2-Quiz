@@ -53,13 +53,19 @@ h3 {
 /* BOX STYLES */
 
 .box-border {
-    border: 5px ridge rgb(184, 149, 86);
     width: 100vw;
     height: 100vh;
     border-radius: 1rem;
-    max-width: 35rem;
-    max-height: 55rem;
+    max-width: 39rem;
+    max-height: 50rem;
     background-color: antiquewhite;
+}
+
+#frame {
+    width: 38rem;
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
 }
 
 /* UTILITIES */
@@ -128,6 +134,11 @@ h3 {
     position: absolute;
     top: 2rem;
     left: 2rem;
+}
+
+#feedback-btn i {
+    font-size: 10rem;
+    color: rgb(158, 95, 35);
 }
 
 /* MODAL */

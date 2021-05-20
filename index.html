@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizology</title>
+    <script src="https://kit.fontawesome.com/12d272a545.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <link rel="shortcut icon" href="/assets/images/education1.png" type="image/png">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -12,6 +13,7 @@
 
 <body>
     <div class="container">
+        <img src="/assets/images/outline_frame.png" id="frame"></img>
         <div class="flex-center flex-column box-border">
             <h1 id="main-title">Quizology</h1>
             <form id="game-settings">
@@ -41,9 +43,10 @@
         </div>
     </div>
     <div>
-        <button id="feedback-btn">Give me some feedback!</button>
+        <a id="feedback-btn" rel="noopener" aria-label="instagram"><i class="fas fa-envelope"></i></a>
         <div id="modal-container">
             <form id="feedback-form" class="flex-center flex-column modal">
+                <a id="close-btn"><i class="fas fa-times"></i></a>
                 <input type="hidden" name="contact_number" required>
                 <label>Name</label>
                 <input type="text" name="user_name" required>
