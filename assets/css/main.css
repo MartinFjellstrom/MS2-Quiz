@@ -207,6 +207,10 @@ h3 {
     border-radius: 1rem;
 }
 
+#feedback-title {
+    text-align: center;
+}
+
 #feedback-form label {
     font-size: 1.8rem;
     font-weight: 500;
@@ -276,7 +280,10 @@ footer {
 
 #contact-header {
     color: antiquewhite;
-    -webkit-text-stroke: 0.05rem black
+    font-weight: 500;
+    font-size: 3.2rem;
+    text-shadow: 2px 2px black;
+    -webkit-text-stroke: 0.05rem black;
 }
 
 #feedback-btn {
@@ -290,7 +297,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: scale 500ms ease-in-out; 
+    transition: transform 500ms ease-in-out; 
 }
 
 #feedback-btn:hover {

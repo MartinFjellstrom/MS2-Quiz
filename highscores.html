@@ -13,7 +13,8 @@
 <body>
     <div class="container blackboard">
         <div class="highscore-settings">
-            <form action="" class="highscore-form">
+            <form action="" id="highscore-form">
+                <h2 class="hs-header">Number Of Questions</h2>
                 <div id="number-of-questions" class="highscore-check">
                     <label class="questions-label check">5
                         <input type="radio" value="5" name="number-of-questions" class="questions-check"
@@ -26,6 +27,7 @@
                         <input type="radio" value="20" name="number-of-questions" class="questions-check">
                     </label>
                 </div>
+                <h2 class="hs-header">Difficulty</h2>
                 <div id="question-difficulty" class="highscore-check">
                     <label class="difficulty-label check">Easy
                         <input type="radio" value="easy" name="question-difficulty" class="difficulty-check"
@@ -38,8 +40,8 @@
                         <input type="radio" value="hard" name="question-difficulty" class="difficulty-check">
                     </label>
                 </div>
+                <h2 class="hs-header">Category</h2>
                 <div id="category" class="flex-column flex-center">
-                    <label for="highscore-category">Category</label>
                     <select name="highscore-category" id="highscore-category">
                         <option class="setting-category-option" value="12">Music</option>
                         <option class="setting-category-option" value="9">General Knowledge</option>
@@ -47,7 +49,7 @@
                         <option class="setting-category-option" value="22">Geography</option>
                         <option class="setting-category-option" value="17">Science & Nature</option>
                     </select>
-                    <button type="submit" onclick="findHighscore(event)">Check High Score</button>
+                    <button id="check-hs-btn" type="submit" onclick="findHighscore(event)">Check High Score</button>
                 </div>
             </form>
         </div>
