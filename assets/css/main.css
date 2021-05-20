@@ -113,7 +113,7 @@ h3 {
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(118, 126, 10, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(184, 149, 86, 0.7);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
@@ -172,6 +172,7 @@ h3 {
 #game-settings>label {
     font-size: 2rem;
     margin-bottom: 0.7rem;
+    font-weight: 800;
 }
 
 #game-settings>select {
@@ -179,6 +180,7 @@ h3 {
     width: 20rem;
     height: 2.6rem;
     font-size: 1.6rem;
+    border-radius: 1rem;
 }
 
 /* END PAGE FORM */
@@ -196,7 +198,7 @@ h3 {
     padding: 1.5rem;
     font-size: 1.8rem;
     border: none;
-    box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(184, 149, 86, 0.5);
 }
 
 input::placeholder {
