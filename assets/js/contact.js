@@ -1,6 +1,16 @@
 const feedbackBtn = document.getElementById("feedback-btn");
 const modalContainer = document.getElementById("modal-container");
 const closeBtn = document.getElementById("close-btn")
+const feedbackForm = document.getElementById("feedback-form");
+
+window.addEventListener("resize", function (){
+    if (window.innerWidth <= 500){
+        feedbackForm.classList.remove("feedback-form");
+    }
+    if (window.innerWidth > 500){
+        feedbackForm.classList.add("feedback-form");
+    }
+})
 
 emailjs.init('user_ReH5lf2lq5p0hrFp6l6BE');
 
