@@ -1,3 +1,6 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 .book {
     background-image: url("../images/open_book1.png");
     background-position: center;
@@ -29,10 +32,10 @@
 .choice-prefix {
     padding: 1.5rem 2.5rem;
     border-right: 0.3rem solid rgba(51, 51, 51, 0.8);
-    /* background-color: rgb(183,126,57); */
     border-radius: 0.5rem 0rem 0rem 0.5rem;
     background: url(../images/wood_texture.jpg);
     background-position: center;
+    font-family: 'Satisfy', cursive;
     color: antiquewhite;
 }
 

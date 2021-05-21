@@ -153,21 +153,33 @@ h3 {
     pointer-events: auto;
 }
 
-#modal-frame {
-    width: 100vw;
+#modal {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: (50%, 50%);
     height: 100vh;
-    max-width: 38rem;
-    max-height: 49rem;
+    width: 100vw;
+    max-height: 40rem;
+    max-width: 59rem;
+}
+
+#modal-frame {
+    max-width: 49rem;
+    max-height: 38rem;
     position: absolute;
+    top: calc(50% - 19rem);
+    left: calc(50% - 24.5rem);
     object-fit: cover;
     pointer-events: none;
-    transform: rotate(90deg);
+    z-index: 2;
 }
 
 #close-btn i {
     font-size: 2.8rem;
     float: right;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
+    margin-top: -1.8rem;
 }
 
 #close-btn i:hover {
@@ -180,12 +192,13 @@ h3 {
     width: 40%;
     height: 3rem;
     align-self: center;
-    margin-top: 2rem;
+    margin: 2rem auto;
     border: 0.1rem solid #333;
     border-radius: 5rem;
     font-size: 2rem;
     background-color: white;
     text-decoration: none;
+    display: block;
 }
 
 #modal-btn:hover {
@@ -199,19 +212,26 @@ h3 {
 
 #feedback-form {
     background-color: antiquewhite;
-    padding: 2rem;
+    padding: 4rem 2rem 2rem 2rem;
     width: 100vw;
     height: 100vh;
     max-width: 50rem;
     max-height: 39rem;
     border-radius: 1rem;
-}
-
-#feedback-title {
+    position: absolute;
+    top: calc(50% - 19.5rem);
+    left: calc(50% - 25rem);
     text-align: center;
 }
 
+#feedback-title{
+    margin-top: -72%;
+    position: relative;
+    z-index: 2;
+}
+
 #feedback-form label {
+    display: block;
     font-size: 1.8rem;
     font-weight: 500;
     margin-top: 2rem;
@@ -220,6 +240,7 @@ h3 {
 #feedback-form input,
 textarea {
     font-size: 1.6rem;
+    width: 80%;
 }
 
 /* GAME SETTINGS FORM */
@@ -272,7 +293,6 @@ input::placeholder {
 /* FOOTER */
 
 footer {
-    max-height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,7 +317,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 500ms ease-in-out; 
+    transition: transform 500ms ease-in-out;
 }
 
 #feedback-btn:hover {
@@ -307,4 +327,27 @@ footer {
 
 #quill {
     height: 7.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 390px) {
+    .frame {
+    width: 98vw;
+}
+.box-border {
+    width: 100vw;
+    height: calc(100vw * 1.30);
+}
+#game-settings {
+    margin-bottom: 0rem;
+}
+#main-title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+}
+
+@media (max-width: 500px) {
+
 }
