@@ -3,15 +3,6 @@ const modalContainer = document.getElementById("modal-container");
 const closeBtn = document.getElementById("close-btn")
 const feedbackForm = document.getElementById("feedback-form");
 
-window.addEventListener("resize", function (){
-    if (window.innerWidth <= 500){
-        feedbackForm.classList.remove("feedback-form");
-    }
-    if (window.innerWidth > 500){
-        feedbackForm.classList.add("feedback-form");
-    }
-})
-
 emailjs.init('user_ReH5lf2lq5p0hrFp6l6BE');
 
 window.onload = function () {
@@ -30,8 +21,23 @@ window.onload = function () {
     });
 }
 
+window.addEventListener("resize", function (){
+    if (window.innerWidth <= 500){
+        feedbackForm.classList.remove("feedback-form");
+    }
+    if (window.innerWidth > 500){
+        feedbackForm.classList.add("feedback-form");
+    }
+});
+
 feedbackBtn.addEventListener("click", function(){
     modalContainer.classList.add("show");
+    if (window.innerWidth <= 500){
+        feedbackForm.classList.remove("feedback-form");
+    }
+    if (window.innerWidth > 500){
+        feedbackForm.classList.add("feedback-form");
+    }
 });
 
 closeBtn.addEventListener("click", function(){
