@@ -58,9 +58,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 90rem;
     max-height: 80vh;
-    margin: 0 auto;
 }
 
 .flex-column {
@@ -224,7 +222,7 @@ h3 {
     text-align: center;
 }
 
-#feedback-title{
+#feedback-title {
     margin-top: -72%;
     position: relative;
     z-index: 2;
@@ -293,8 +291,12 @@ input::placeholder {
 /* FOOTER */
 
 footer {
+    width: 100vw;
+    position: absolute;
+    top: 80vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -317,7 +319,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 500ms ease-in-out;
+    transition: transform 300ms ease-in-out;
 }
 
 #feedback-btn:hover {
@@ -333,21 +335,53 @@ footer {
 
 @media (max-width: 390px) {
     .frame {
-    width: 98vw;
-}
-.box-border {
-    width: 100vw;
-    height: calc(100vw * 1.30);
-}
-#game-settings {
-    margin-bottom: 0rem;
-}
-#main-title {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-}
+        width: 98vw;
+    }
+
+    .box-border {
+        width: 100vw;
+        height: calc(100vw * 1.30);
+    }
+
+    #game-settings {
+        margin-bottom: 0rem;
+    }
+
+    #main-title {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 500px) {}
 
+@media (max-height: 670px) {
+    footer {
+        bottom: 0;
+    }
+
+    #contact-header {
+        font-weight: 300;
+        font-size: 1.8rem;
+        margin-bottom: 0rem;
+    }
+
+    #feedback-btn {
+        width: 5rem;
+        height: 5rem;
+        transition: transform 300ms ease-in-out;
+        margin-bottom: 0rem;
+    }
+
+    #feedback-btn:hover {
+        cursor: pointer;
+        transform: scale(1.09);
+    }
+
+    #quill {
+        height: 4rem;
+    }
+    .container {
+    max-height: 87vh;
+}
 }
