@@ -58,7 +58,6 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 80vh;
 }
 
 .flex-column {

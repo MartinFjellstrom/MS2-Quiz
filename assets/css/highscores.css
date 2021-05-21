@@ -11,11 +11,40 @@
     min-height: 24rem;
     list-style: none;
     padding-left: 0;
+    text-align: center;
+}
+
+.high-scores-list-popup {
+    width: 100vw;
+    display: inline-block !important;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    text-align: center;
+}
+
+#check-new-hs-btn {
+    display: none;
+    cursor: pointer;
+    margin: 2.8rem auto 0rem;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 2.4rem;
+    font-family: chalkFont;
+    color: #FBF7F5;
+    transition: transform 150ms ease-in-out;
+    border: 0.1rem outset #FBF7F5;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+#check-new-hs-btn:hover {
+    cursor: pointer;
+    transform: translateY(-0.1rem) scale(1.2, 1.2);
 }
 
 .high-score {
     color: #FBF7F5;
-    ;
     font-size: 2.8rem;
     margin-bottom: 1rem;
     font-family: chalkFont;
@@ -51,6 +80,7 @@
     background-color: none;
     font-family: chalkFont;
     transition: transform 150ms ease-in-out;
+    z-index: 4;
 }
 
 .blackboard-btn:hover {
@@ -61,7 +91,7 @@
 
 /* SETTINGS */
 
-.highscore-settings {
+#highscore-settings {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -87,7 +117,7 @@
 }
 
 #highscore-category {
-        margin-bottom: 2rem;
+    margin-bottom: 2rem;
     width: 20rem;
     height: 2.6rem;
     font-size: 1.6rem;
@@ -125,4 +155,43 @@
 #check-hs-btn:hover {
     cursor: pointer;
     transform: translateY(-0.1rem) scale(1.2, 1.2);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px) {
+    .highscore-header {
+        font-size: 4rem;
+    }
+
+    .hs-header {
+        font-size: 2.8rem;
+    }
+
+    .check {
+        font-size: 2rem;
+    }
+
+    #check-hs-btn {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .blackboard {
+        flex-direction: column;
+    }
+
+    .blackboard-btn {
+        margin: -3.5rem auto 0rem;
+        font-size: 2.4;
+    }
+
+    #high-scores-list-container {
+        display: none;
+    }
+
+    #highscore-settings {
+        width: 85vw;
+    }
 }

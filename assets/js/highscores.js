@@ -3,9 +3,17 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 const questionsRadio = document.getElementsByClassName("questions-check");
 const difficultyRadio = document.getElementsByClassName("difficulty-check");
 const categoryOptions = document.getElementsByClassName("setting-category-option");
+const highScoreListContainer = document.getElementById("high-scores-list-container");
+const highScoreSettingContainer = document.getElementById("highscore-settings");
+const checkNewHS = document.getElementById("check-new-hs-btn");
 
 function findHighscore(e) {
     e.preventDefault();
+    if (window.innerWidth <= 460){
+        highScoreListContainer.classList.add("high-scores-list-popup")
+        highScoreSettingContainer.style.display = "none";
+        checkNewHS.style.display = "block";
+    }
     checkQuestionsValue();
     checkDifficultyValue();
     checkCategoryValue();
@@ -30,6 +38,12 @@ function findHighscore(e) {
         .join("");
 }
 
+function checkNewHighSore(){
+    highScoreListContainer.classList.remove("high-scores-list-popup")
+        highScoreSettingContainer.style.display = "flex";
+        checkNewHS.style.display = "none";
+}
+
 function checkQuestionsValue() {
     for (let i = 0; i < questionsRadio.length; i++) {
         if (questionsRadio[i].checked) {
@@ -37,7 +51,6 @@ function checkQuestionsValue() {
         }
     }
 }
-
 function checkDifficultyValue() {
     for (let i = 0; i < difficultyRadio.length; i++) {
         if (difficultyRadio[i].checked) {
@@ -45,7 +58,6 @@ function checkDifficultyValue() {
         }
     }
 }
-
 function checkCategoryValue() {
     for (let i = 0; i < categoryOptions.length; i++) {
         if (categoryOptions[i].selected) {
