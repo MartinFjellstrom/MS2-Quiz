@@ -20,7 +20,7 @@ maxQuestions = localStorage.getItem("maxQuestions");
 difficulty = localStorage.getItem("difficulty");
 category = localStorage.getItem("category");
 
-fetch(`https://opentdb.com/api.php?amount=50&category=${category}&difficulty=${difficulty}&type=multiple`)
+fetch(`https://opentdb.com/api.php?amount=40&category=${category}&difficulty=${difficulty}&type=multiple`)
     .then(function (res) {
         return res.json();
     })
