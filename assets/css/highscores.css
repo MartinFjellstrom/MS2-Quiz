@@ -7,10 +7,6 @@
 
 /* HIGH SCORES */
 
-#high-scores {
-    width: 50%;
-}
-
 #high-scores-list {
     min-height: 24rem;
     list-style: none;
@@ -42,7 +38,6 @@
     background-image: url("../images/blackboard.png");
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 75rem;
 }
 
 .blackboard-btn {
