@@ -4,7 +4,7 @@ Link to [Quizology](https://martinfjellstrom.github.io/MS2-Quiz/)
  site
 
 This is an online quiz game for users intressted in trivia. The game apeals to a wide variety of users as it covers a selection of subjects suited to different intrests.
-![](readme/images/mockup.png)
+![](mockup pic)
 
 # Table of Contents
 
@@ -168,28 +168,11 @@ For testing W3C Markup Validation Service was used to validate the HTML code and
 
 ### **HTML**
 
-![Courses page errors](readme/images/courses_errors.png)        
-
-Courses page fixes: Added hidden attribute, an empty value attribute and changed the selected value to "selected" on the first option element that is a child to the select element.
-
-![Competition page errors](readme/images/competition_errors.png)
-
-Competition page fixes: Changed the target of the aria-controls on the collapse buttons.
-
-![Contact page errors](readme/images/contact_errors.png)
-
-Contact page fixes: Removed frameborder attribute, moved the height and width attribute to css and removed the new line in the middle of the src attribute on the map. Moved the h1 elemet inside the section element.
-
-[Index page HTML validator results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmartinfjellstrom.github.io%2FMS1-the-cave%2Findex.html)
-[Courses page HTML validator results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmartinfjellstrom.github.io%2FMS1-the-cave%2Fcourses.html)
-[Competition page HTML validator results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmartinfjellstrom.github.io%2FMS1-the-cave%2Fcompetition.html)
-[Contact page HTML validator results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmartinfjellstrom.github.io%2FMS1-the-cave%2Fcontact.html)
 
 ### **CSS**
 
-There were errors found in the CSS code, however these were part of the bootstrap code.
 
-[CSS validator results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmartinfjellstrom.github.io%2FMS1-the-cave%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
+### **JavaScript**
 
 
 ## Testing User Stories
@@ -288,81 +271,16 @@ There were errors found in the CSS code, however these were part of the bootstra
 
 ### I tested the site with lighthouse in Chrome Devtools and got this result:
 
-![](readme/images/lighthouse-before.jpg)
+
 
 ### Then I applied the following changes to improve the result:
 
-* Added an aria-labels to external links and input elements.
 
-* Added <code>rel="noopener"</code> to my external links.
-
-* Added <code>object-fit: cover;</code> to the styling of the instructor pictures to correct the aspect ratio.
 
 ### The final result: 
 
-![](readme/images/lighthouse-after.jpg)
 
 ## Bugs
-
-1. On Firefox browser the items in the dropdown options in the course booking form do not show in the correct font (Jura).
-
-    **Attempted Fix:** I wrote a Mozilla specific extension in the css file to target the options in the dropdown menu.
-
-        @-moz-document url-prefix() {
-        .form-select option {
-        font-family: 'jura', serif;
-        }
-        }
-
-    However this did not work and after researching it a bit more it seems that FireFox does not support any font family changes to dropdown menus in CSS.
-
-2. On Firefox browser the table in the “Entry Fee” card in the “Prices” section of the landing page is centred rather than aligned to the top of the card.
-
-    **Fix:** I wrote a Mozilla specific extension in the css file that targeted the .prices-div table and removed the forced height.
-
-        @-moz-document url-prefix() {
-        .prices-div table {
-        height: 0 !important;
-        }
-        }
-
-3. On a mobile device (320x480px) the boxed headings (competitions, the team, courses) push the size of screen out more than other content on the page, creating a white gap on the right side of all pages.
-
-    **Fix:** I removed the side paddings on the .who-we-are selector in the css file which pushed the "The Team" boxed heading to the right.
-
-        .who-we-are {
-        padding: 50px 0px;
-        background-color: rgb(89, 131, 129);
-        }
-
-    I took the course boxed heading out of the course-text div which has a specified width that pushed the box to the right.
-
-    I took the competition boxed heading out of the about-comp div which has a specified width that pushed the box to the right.
-
-4. On a mobile device (320x480px) “The Cave” heading on the landing page is overlapping the navigation bar.
-
-    **Fix:** I wrote a media query for max-height and changed the font size to 5rem so the heading doesn't overlap the navbar.
-
-        @media (max-height: 550px) {
-        .welcome-text {
-        font-size: 5rem;
-        }
-        }
-
-5. On tablet device one one of the collapse buttons on the competitions page is a different height to the others.
-
-    **Fix:** I added some extra space in between the text and the icon on the buttons.
-
-        Top Rope Competition 02/10/2020 &nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-down"></i>
-
-6. On all devices there is a white gap on the right side of the landing page.
-
-    **Fix:** Inspected the applied CSS in dev tools and toggled the values in the rules view, unchecking the checkboxes to find which property caused the bug. Found a bootstrap property was the cause of the bug and consequently set the value to 0 which fixed it.
-
-
-        .row {
-        --bs-gutter-x: 0rem;
-        }
 
 # Deployment
 
@@ -410,57 +328,28 @@ There were errors found in the CSS code, however these were part of the bootstra
 
 # Credits
 
-All content on the site was written by myself and proof-read by Melissa De Siena.
+Quiz tutorial
 
 ## Media
 
 ### Images
 
-#### Hero Images:
+#### Blackboard:
 
-* Landing Page - http://www.boulderingstockholm.se/
 
-* Courses Page - https://www.paradoxsports.org/calendar/aci-rcf2020/
-
-* Competitions Page - https://lic.thecliffsclimbing.com/events
-
-#### Landing Page Carousel:
-
-* www.pikist.com
-
-* www.piqsels.com
-
-* www.publicdomainpictures.net
-
-#### "The Team" Images:
-
-* www.piqsels.com
-
-* www.pickpik.com
-
-#### Courses Page:
-
-* Top Rope Course - https://climbcore.wordpress.com/2015/04/19/tried-and-true-anchors-for-setting-up-top-ropes/
-
-* Technique Course - https://rockandice.com/how-to-climb/rock-climbing-technique/
-
-* Lead Course - https://www.rei.com/learn/expert-advice/quickdraws.html
 
 ## Code 
 
-**Navigation bar** - For the creation of the navigation bar I was inspired by “Bootstrapping Your Next Big Idea With Bootstrap 4 - Components - Core Components - part 1” Code Institute lesson.
+**Quiz game engine** - 
 
-[Bootstrap V.5](https://getbootstrap.com/) Template code from the Bootstrap documentation was used 
-to create the navbar, cards, modals, tables, collapse buttons and the carousel.
+[Quiz tutorail](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) Used this tutorial as a template for my Quizology site
 
-[Google Maps](https://developers.google.com/maps/documentation/embed/get-started) – Used for the embedded map on the contact page.
+[emailJS](https://developers.google.com/maps/documentation/embed/get-started) – Used the documentation to get the email js function to work
 
 
 # Acknowledgements
 
 A big thank you to my partner Melissa for her support throughout this project.
-
-Thanks to my mentor for his help and input on how to improve the site.
 
 Thanks to the tutors at Code Institute and Student Care service for their support.
 
