@@ -255,6 +255,29 @@ textarea {
     cursor: pointer;
 }
 
+/* INSTRUCTIONS PAGE */
+
+.instructions-header {
+    font-size: 4.4rem;
+    margin-bottom: 0rem;
+}
+
+.instructions h3 {
+    font-size: 2.6rem;
+    margin: 1.5rem 0rem;
+    font-weight: 600;
+}
+
+.instructions ul {
+    padding: 0rem 4rem;
+}
+
+.instructions li {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
 /* END PAGE FORM */
 
 #end-form {

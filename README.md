@@ -146,20 +146,20 @@ Note: The final product looks very different from the original wireframes since 
 
 ## Frameworks, Libraries & Programs Used
 
-* [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/download/) – used to help the responsiveness, layout and styling of the website as well as for the creation of modals, image carousel navigation bar.
 * [Google fonts](https://fonts.google.com/) – used to import fonts into the style.css file.
-* [Font Awesome](https://fontawesome.com/) – used to import icons for the social media links, hamburger menu and previous competition buttons.
+* [Font Awesome](https://fontawesome.com/) – used to import icon for the close button on the feedback modal.
 * [GitHub](https://github.com/) – used to store the projects code after being pushed from Git.
 * [GitPod](https://gitpod.io/) – used to edit the projects code before committing it to Git.
 * [Git](https://git-scm.com/) – used for version control of the code.
-* [Balsamiq](https://balsamiq.com/) – used to create the mobile and desktop wireframes.
 * [W3 Jigsaw](https://jigsaw.w3.org/css-validator/) – used to validate the CSS code.
 * [W3C validator](https://validator.w3.org/) – used to validate the HTML code.
+* [Java validator]() --------
 * [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) – used to debug and test code. Also used for performance testing with lighthouse.
 * [PicPick](https://picpick.app/) – used to screen capture pages for use in the README file.
 * [Eye Dropper](https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka) – used to get colour from picture.
-* [Free Logo Design](https://www.freelogodesign.org/) - used to make a logo for the favicon.
 * [Paint](https://en.wikipedia.org/wiki/Microsoft_Paint) - used to make colour samples in the README file.
+* [Open Trivia DB API](https://opentdb.com/api_config.php) - used to fetch questios for the game.
+* [EmailJS](https://www.emailjs.com/) - used to get a email feedback function.
 
 # Testing
 
@@ -179,71 +179,90 @@ For testing W3C Markup Validation Service was used to validate the HTML code and
 
 ### As a first time visitor I want:
 
-* To easily be able to navigate through the site and find everything I need.
-	- All the buttons on the site have a hover effect to guide the user when selecting.
-	- The menus on both the landing page and the end page are centred and clearly visible
-	- The instructions page helps the user to understand how to navigate and use the site.
-	- All drop downs and buttons are clearly labelled.
-	- (Hover effect + labels, picture of the instructions, picture of centred menus) 
+#### To easily be able to navigate through the site and find everything I need.
+* All the buttons on the site have a hover effect to guide the user when selecting.
+* The menus on both the landing page and the end page are centred and clearly visible
+* The instructions page helps the user to understand how to navigate and use the site.
+* All drop downs and buttons are clearly labelled.
+
+![](assets/images/readme_img/btn_hover.png)
+![](assets/images/readme_img/instructions_page.png)
+![](assets/images/readme_img/centred_landing.png)
 	
-* A responsive site so that I can access the game on different devices.
-  - The site is responsive so it looks good on whichever device is used.
-  - The high score list and filter is easy to toggle between when using the site on a mobile device. (High score page on mobile, list and filter)
+#### A responsive site so that I can access the game on different devices.
+* The site is responsive so it looks good on whichever device is used.
+* The high score list and filter is easy to toggle between when using the site on a mobile device.
 
-* To easily be able to access instructions to understand how to play the game. 
-  - There is an instructions page that can easily be reached from the menu on the landing page. (instruction button and page)
+![](assets/images/readme_img/mobile_hs_filter.png)
+![](assets/images/readme_img/mobile_hs_list.png)
 
-* To be able pick from different subject categories depending on my interests.
-  - There is a category drop down in the main menu on the landing page where the user can pick between several subjects before starting the game.
+#### To easily be able to access instructions to understand how to play the game. 
+* There is an instructions page that can easily be reached from the menu on the landing page. 
 
-* To select a difficulty level so that I can play the game according to my abilities.
-  - There is a difficulty drop down in the main menu on the landing page where the user can pick between easy, medium and hard levels before starting the game.
+![](assets/images/readme_img/landing_menu_ins_btn.png)
+![](assets/images/readme_img/instructions_page.png)
 
-* To pick the amount of questions so that I can have control over how long I play.
-  - There is a number of questions drop down in the main menu on the landing page where the user can pick between 5, 10 or 20 questions before starting the game.
+#### To be able pick from different subject categories depending on my interests.
+* There is a category drop down in the main menu on the landing page where the user can pick between several subjects before starting the game.
 
-(Picture of all the drop downs on the landing page)
+#### To select a difficulty level so that I can play the game according to my abilities.
+* There is a difficulty drop down in the main menu on the landing page where the user can pick between easy, medium and hard levels before starting the game.
 
-#### As a player playing Quizology I want:
-* A confirmation of my answer and to know which one is correct if I answer wrongly.
-	- After selecting an answer the selected answer is highlighted green if answered correctly and red if incorrectly.
-	- If an answer is incorrect the correct answer is still highlighted with a green colour.
-	- (picture of correctly and in correctly answered questions) 
+#### To pick the amount of questions so that I can have control over how long I play.
+* There is a number of questions drop down in the main menu on the landing page where the user can pick between 5, 10 or 20 questions before starting the game.
+
+![](assets/images/readme_img/landing_page_dropdown.png)
+
+### As a player playing Quizology I want:
+
+#### A confirmation of my answer and to know which one is correct if I answer wrongly.
+* After selecting an answer the selected answer is highlighted green if answered correctly and red if incorrectly.
+* If an answer is incorrect the correct answer is still highlighted with a green colour.
+
+![](assets/images/readme_img/answer_correct.png)
+![](assets/images/readme_img/answer_incorrect.png)
 	
-* To see the remaining amount of questions.
-	- The game page has a question counter which displays the number of the current question as well as the total amount of questions in that game.
-	- The game page has a progress bar that incrementally fills up when moving to the next question.
+#### To see the remaining amount of questions.
+* The game page has a question counter which displays the number of the current question as well as the total amount of questions in that game.
+* The game page has a progress bar that incrementally fills up when moving to the next question.
 	
-* To keep track of my current score.
-	- The game page has a score counter is the top right corner that shows the users current score
-	- After finishing a game the final score is clearly displayed on the ending page
-	- (picture of game HUD)
+#### To keep track of my current score.
+* The game page has a score counter is the top right corner that shows the users current score
+* After finishing a game the final score is clearly displayed on the ending page
 
-* To be able to save my final score to a high score list.
-	- After finishing a game the user has the option to save the final score to a local storage in their browser by entering their username in a text field and pressing the save button.
-	- The high score list can be reached from the landing page menu by pressing the high score button.
-	- (picture of final score, high score btn)
+![](assets/images/readme_img/game_page_hud.png)
 
-#### As a returning player of Quizology I want:
-* A wide selection of subjects to have more variety.
-	- The user gets several subjects to choose from on the category drop down menu on the landing page.
-	- (pic of dropped down category menu)
-	
-* A big pool of questions for less repetition when answering questions from subjects more than once.
-	- Every time API is called, the site fetches 40 questions and adds them to a list from which the user's selected number of questions are randomly picked by the game.
-	
-* To be able to give feedback to the creator to contribute to further improvement of the game
-	- At the bottom of the landing page there is a button with an invitation above it to send feedback. 
-	- By pressing the button they open a form where they have to fill in their name, email and message. 
-	- The message goes straight to my email.
-	- (picture of feedback btn and modal)
-	
-* To be able to check and compare past scores.
-	- On the high score page the user can filter through different high score lists by choosing selected game settings and pressing "check high score" button.
-	- The high score list will show them their top 5 scores in order of how many points they got.
-	- The user will find instructions how to filter and load high scores in the instructions page.
-(picture of high score page and pic of filter instructions)
+#### To be able to save my final score to a high score list.
+* After finishing a game the user has the option to save the final score to a local storage in their browser by entering their username in a text field and pressing the save button.
+* The high score list can be reached from the landing page menu by pressing the high score button.
 
+![](assets/images/readme_img/landing_menu_hs_btn.png)
+![](assets/images/readme_img/final_score.png)
+
+### As a returning player of Quizology I want:
+
+#### A wide selection of subjects to have more variety.
+* The user gets several subjects to choose from on the category drop down menu on the landing page.
+
+![](assets/images/readme_img/category_dropdown.png)
+	
+#### A big pool of questions for less repetition when answering questions from subjects more than once.
+* Every time API is called, the site fetches 40 questions and adds them to a list from which the user's selected number of questions are randomly picked by the game.
+	
+#### To be able to give feedback to the creator to contribute to further improvement of the game
+* At the bottom of the landing page there is a button with an invitation above it to send feedback. 
+* By pressing the button they open a form where they have to fill in their name, email and message. 
+* The message goes straight to my email.
+
+![](assets/images/readme_img/feedback_modal.png)
+	
+#### To be able to check and compare past scores.
+* On the high score page the user can filter through different high score lists by choosing selected game settings and pressing "check high score" button.
+* The high score list will show them their top 5 scores in order of how many points they got.
+* The user will find instructions how to filter and load high scores in the instructions page.
+
+![](assets/images/readme_img/high_scores_page.png)
+![](assets/images/readme_img/hs_instructions.png)
 
 ## Compatibility Testing
 
