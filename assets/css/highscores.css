@@ -144,7 +144,7 @@
     background: none;
     border: none;
     font-size: 3.2rem;
-    font-family: chalkFont;
+    font-family: chalkFont, serif;
     color: #FBF7F5;
     transition: transform 150ms ease-in-out;
     border: 0.1rem outset #FBF7F5;
