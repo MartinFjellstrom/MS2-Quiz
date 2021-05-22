@@ -30,7 +30,7 @@
     background: none;
     border: none;
     font-size: 2.4rem;
-    font-family: chalkFont;
+    font-family: chalkFont, serif;
     color: #FBF7F5;
     transition: transform 150ms ease-in-out;
     border: 0.1rem outset #FBF7F5;
@@ -47,13 +47,13 @@
     color: #FBF7F5;
     font-size: 2.8rem;
     margin-bottom: 1rem;
-    font-family: chalkFont;
+    font-family: chalkFont, serif;
 }
 
 .highscore-header {
     color: #FBF7F5;
     font-size: 6rem;
-    font-family: chalkFont;
+    font-family: chalkFont, serif;
     margin-bottom: 4.2rem;
     font-weight: 100;
 }
@@ -78,7 +78,7 @@
     text-decoration: none;
     color: #FBF7F5;
     background-color: none;
-    font-family: chalkFont;
+    font-family: chalkFont, serif;
     transition: transform 150ms ease-in-out;
     z-index: 4;
 }
@@ -103,7 +103,7 @@
 
 .check {
     font-size: 2.5rem;
-    font-family: chalkFont;
+    font-family: chalkFont, serif;
     color: #FBF7F5;
     width: 3rem;
     display: flex;
@@ -127,7 +127,7 @@
 
 .hs-header {
     color: #FBF7F5;
-    font-family: chalkFont;
+    font-family: chalkFont, serif;
     margin-bottom: 0rem;
     margin-top: 2.5rem;
     font-size: 3.5rem;
