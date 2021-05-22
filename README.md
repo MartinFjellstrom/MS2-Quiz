@@ -73,21 +73,23 @@ This is an online quiz game for users intressted in trivia. The game apeals to a
 
 Antiquewhite rgb(250, 235, 215)      
 
-![](readme/images/tomato-colour.png)        
+![](assets/images/readme_img/antiquewhite.png)        
 
 Chalk white rgb(251, 247, 245)    
 
-![](readme/images/darkslategrey-colour.png)
+![](assets/images/readme_img/chalkwhite.png)
 
 Darkslategray rgb(51, 51, 51) 
 
-![](readme/images/slategrey-colour.png)
+![](assets/images/readme_img/darkslategray.png)
 
 Sienna rgb(184, 149, 86)
       
+![](assets/images/readme_img/sienna.png)
+
 ### Fonts
 
-The main fonts used throughout the site are [Gentium Book Basic](https://fonts.google.com/?query=jura), [Stylish Marker](https://fonts.google.com/?query=black+ops+one) and [Satisfy](https://fonts.google.com/?query=black+ops+one) with Serif 
+The main fonts used throughout the site are [Gentium Book Basic](https://fonts.google.com/?query=jura), [Stylish Marker](https://fonts.google.com/?query=black+ops+one) and [Satisfy](https://www.1001fonts.com/stylish-marker-font.html) with Serif 
 as a fallback font should the font not be supported by the user’s browser. The fonts were chosen to fit the old-timey educational theme of the game and improve the user experience. Satisfy was chosen to imitate chalk writing on the blackboard of the high scores page.
 
 ### Imagery
@@ -290,14 +292,9 @@ For testing W3C Markup Validation Service was used to validate the HTML code and
 
 ### I tested the site with lighthouse in Chrome Devtools and got this result:
 
-
-
 ### Then I applied the following changes to improve the result:
 
-
-
 ### The final result: 
-
 
 ## Bugs
 
@@ -313,7 +310,7 @@ For testing W3C Markup Validation Service was used to validate the HTML code and
 
 3. On the top tab, locate and select "Settings".
 
-4. Scroll down to find the "GitHub Pages" section.
+4. Look for the "Pages" section in the leftside menu.
 
 5. Under source, select the "Master" branch from the dropdown selection menu.
 
@@ -321,7 +318,7 @@ For testing W3C Markup Validation Service was used to validate the HTML code and
 
 7. Press the "Save" button and the page will automatically refresh.
 
-8. Scroll back down to the "GitHub Pages" section and find the now published link to the deployed site in the coloured section under the GitHub Pages heading. 
+8. In the "Pages" section you can now find the published link to the deployed site in the coloured section under the GitHub Pages heading. 
 
 ## Making a local Clone
 
@@ -344,11 +341,6 @@ For testing W3C Markup Validation Service was used to validate the HTML code and
         > remove: Total 10 (delta 1), reused 10 (delta 1)
         > Unpacking objects: 100% (10/10), done.
 
-
-# Credits
-
-Quiz tutorial
-
 ## Media
 
 ### Images
@@ -367,12 +359,17 @@ Quiz tutorial
 
 ## Code 
 
-**Quiz game engine** - 
+**Quiz game engine** 
 
 [Quiz tutorail](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) Used this tutorial as a template for my Quizology site.
 
+**EmailJS**
+
 [emailJS](https://developers.google.com/maps/documentation/embed/get-started) – Used the documentation to get the email js function to work.
 
+**Loader**
+
+[Loader](https://loading.io/css/) - borrowed some code to get a loader when starting the game.
 
 # Acknowledgements
 
