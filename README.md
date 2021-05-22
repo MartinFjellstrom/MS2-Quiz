@@ -96,7 +96,7 @@ All the imagery on the site was chosen to enhance the user experience by providi
 
 ## Wireframes
 
-[Wireframes PDF](readme/images/ms1-wireframes.pdf)
+[Wireframes PDF]()
 
 Note: The final product looks very different from the original wireframes since my ideas for the project changed with time.
 
@@ -309,7 +309,7 @@ For testing W3C Markup Validation Service was used to validate the HTML code and
 
 1. Login to Github.
 
-2. Locate and select the “MartinFjellstrom/MS1-the-cave” repository.
+2. Locate and select the “MartinFjellstrom/MS2-Quiz” repository.
 
 3. On the top tab, locate and select "Settings".
 
@@ -325,7 +325,7 @@ For testing W3C Markup Validation Service was used to validate the HTML code and
 
 ## Making a local Clone
 
-1. Log in to GitHub and locate the “MartinFjellstrom/MS1-the-cave” repository.
+1. Log in to GitHub and locate the “MartinFjellstrom/MS2-Quiz” repository.
 2. Click on the “Code” dropdown next to the green “GitPod” button.
 3. Under Clone, select the "HTTPS" option.
 4. Copy the URL shown.
@@ -353,17 +353,25 @@ Quiz tutorial
 
 ### Images
 
-#### Blackboard:
+* Background - https://unsplash.com/photos/YLSwjSy7stw
 
+* Blackboard - https://www.cleanpng.com/png-blackboard-learn-wood-stain-slate-rectangle-blackb-209360/
 
+* Game book - https://www.vhv.rs/viewpic/hJhThoT_blank-book-transparent-background-open-book-cliparts-hd/
+
+* Wood texture for choice prefix - https://www.sketchuptextureclub.com/textures/architecture/wood/fine-wood/dark-wood/dark-raw-wood-texture-seamless-04278
+
+* Frame border - https://www.stickpng.com/cat/miscellaneous/frames?page=1
+
+* Quill icon - https://thenounproject.com/term/quill-pen/1053377/
 
 ## Code 
 
 **Quiz game engine** - 
 
-[Quiz tutorail](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) Used this tutorial as a template for my Quizology site
+[Quiz tutorail](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) Used this tutorial as a template for my Quizology site.
 
-[emailJS](https://developers.google.com/maps/documentation/embed/get-started) – Used the documentation to get the email js function to work
+[emailJS](https://developers.google.com/maps/documentation/embed/get-started) – Used the documentation to get the email js function to work.
 
 
 # Acknowledgements
