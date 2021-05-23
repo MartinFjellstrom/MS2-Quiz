@@ -1,6 +1,8 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
+/* GAME PAGE MAIN STYLES */
+
 .book {
     background-image: url("../images/open_book1.png");
     background-position: center;
@@ -45,6 +47,8 @@
     font-weight: 800;
 }
 
+/* ANSWER CONFIRMATON STYLES */
+
 .correct {
     background-color: #28a745;
 }
@@ -53,7 +57,7 @@
     background-color: #dc3545;
 }
 
-/* HUD */
+/* HUD STYLES*/
 
 #hud {
     display: flex;

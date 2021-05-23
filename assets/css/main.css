@@ -129,7 +129,7 @@ h3 {
     pointer-events: none;
 }
 
-/* MODAL */
+/* MODAL STYLES*/
 
 #modal-container {
     background-color: rgba(0, 0, 0, 0.5);
@@ -347,6 +347,8 @@ footer {
 /* MEDIA QUERIES */
 
 @media (max-width: 500px) {
+
+    /* MODAL STYLES */
     #modal-frame {
         transform: rotate(90deg);
     }
@@ -382,6 +384,8 @@ footer {
 }
 
 @media (max-width: 390px) {
+
+    /* UNIVERSAL STYLES*/
     .frame {
         width: 98vw;
     }
@@ -391,6 +395,7 @@ footer {
         height: calc(100vw * 1.30);
     }
 
+    /* LANDING PAGE */
     #game-settings {
         margin-bottom: 0rem;
     }
@@ -402,6 +407,8 @@ footer {
 }
 
 @media (max-height: 830px) {
+
+    /* LANDING PAGE */
     #contact-header {
         font-size: 2rem;
         margin-bottom: 0rem;
@@ -423,7 +430,11 @@ footer {
 }
 
 @media (max-height: 670px) {
-    /* LANDING */
+
+    /* UNIVERSAL STYLES */
+    .container {
+        max-height: 87vh;
+    }
 
     .btn {
         font-size: 1.4rem;
@@ -432,6 +443,7 @@ footer {
         margin-bottom: 0.3rem;
     }
 
+    /* LANDING PAGE */
     #main-title {
         font-size: 3rem;
     }
@@ -470,12 +482,7 @@ footer {
         height: 4rem;
     }
 
-    .container {
-        max-height: 87vh;
-    }
-
-    /* INSTRUCTIONS */
-
+    /* INSTRUCTIONS PAGE */
     .instructions-header {
         display: none;
     }
