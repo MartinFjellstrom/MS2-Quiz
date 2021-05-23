@@ -352,15 +352,15 @@ For testing W3C Markup Validation Service was used to validate the HTML code, W3
 
 * **Mobile** 320x480px
 
-## Performance Testing
-
-### I tested the site with lighthouse in Chrome Devtools and got this result:
-
-### Then I applied the following changes to improve the result:
-
-### The final result: 
-
 ## Bugs
+
+##### When playing the game with the difficulty setting set to easy and the category to Science & Nature the site didn't load the game function.
+
+* Fix: Changed the fetched questions to 40 instead of 50 since the science and nature category didn't have 50 questions
+
+##### When adding an empty href attribute to the "a" element the code didn't go through the validator.
+
+* Fix: Change the element from "a" element to button element for the code to go through the validator
 
 # Deployment
 
