@@ -345,26 +345,6 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 390px) {
-    .frame {
-        width: 98vw;
-    }
-
-    .box-border {
-        width: 100vw;
-        height: calc(100vw * 1.30);
-    }
-
-    #game-settings {
-        margin-bottom: 0rem;
-    }
-
-    #main-title {
-        font-size: 4rem;
-        margin-bottom: 1.5rem;
-    }
-}
-
 @media (max-width: 500px) {
     #modal-frame {
         transform: rotate(90deg);
@@ -397,6 +377,46 @@ footer {
         float: right;
         margin-right: 3rem;
         margin-top: -10rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .frame {
+        width: 98vw;
+    }
+
+    .box-border {
+        width: 100vw;
+        height: calc(100vw * 1.30);
+    }
+
+    #game-settings {
+        margin-bottom: 0rem;
+    }
+
+    #main-title {
+        font-size: 4rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-height: 830px) {
+    #contact-header {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    #feedback-btn {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    #quill {
+        height: 5.5rem;
+    }
+
+    footer {
+        top: 85vh;
     }
 }
 
@@ -456,29 +476,12 @@ footer {
     .instructions-header {
         display: none;
     }
+
     .instructions h3 {
         font-size: 2rem;
     }
+
     .instructions li {
         font-size: 1.3rem;
-    }
-}
-
-@media (max-height: 830px) {
-    #contact-header {
-        font-size: 2rem;
-        margin-bottom: 0rem;
-    }
-
-    #feedback-btn {
-        width: 7rem;
-        height: 7rem;
-    }
-
-        #quill {
-        height: 5.5rem;
-    }
-        footer {
-        top: 85vh;
     }
 }
