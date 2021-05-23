@@ -463,3 +463,22 @@ footer {
         font-size: 1.3rem;
     }
 }
+
+@media (max-height: 830px) {
+    #contact-header {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    #feedback-btn {
+        width: 7rem;
+        height: 7rem;
+    }
+
+        #quill {
+        height: 5.5rem;
+    }
+        footer {
+        bottom: 0;
+    }
+}
