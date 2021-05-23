@@ -57,14 +57,14 @@ function startGame() {
     getNewQuestion();
     game.classList.remove("hidden");
     loader.classList.add("hidden");
-};
+}
 
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
         //Go to the end page
         return window.location.assign("end.html");
-    };
+    }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${maxQuestions}`;
     // Update the progress bar
@@ -75,14 +75,14 @@ function getNewQuestion() {
     question.innerHTML = currentQuestion.question;
 
     choices.forEach(function (choice) {
-        const number = choice.dataset["number"];
+        const number = choice.dataset.number;
         choice.innerHTML = currentQuestion["choice" + number];
     });
 
     availableQuestions.splice(questionIndex, 1);
 
     acceptingAnswers = true;
-};
+}
 
 choices.forEach(function (choice) {
     choice.addEventListener("click", function (e) {
@@ -90,21 +90,21 @@ choices.forEach(function (choice) {
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset["number"];
+        const selectedAnswer = selectedChoice.dataset.number;
         const correctAnswer = currentQuestion.answer.toString();
 
-        let classToApply = "incorrect"
+        let classToApply = "incorrect";
         if (selectedAnswer === correctAnswer) {
             classToApply = "correct";
-        };
+        }
         
         if (classToApply === "correct") {
             incrementScore(correctBonus);
-        };
+        }
         
         if (selectedAnswer !== correctAnswer){
             choices[correctAnswer - 1].parentElement.classList.add("correct");
-        };
+        }
         selectedChoice.parentElement.classList.add(classToApply);
 
         setTimeout(function () {
@@ -118,4 +118,4 @@ choices.forEach(function (choice) {
 function incrementScore(num) {
     score += num;
     scoreText.innerText = score;
-};
+}

@@ -4,7 +4,6 @@ const finalScore = document.getElementById("final-score");
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-const maxHighScores = 5;
 
 maxQuestions = localStorage.getItem("maxQuestions");
 difficulty = localStorage.getItem("difficulty");
@@ -30,4 +29,4 @@ function saveHighScore(e) {
 
     localStorage.setItem("highScores", JSON.stringify(highScores));
     window.location.assign("index.html");
-};
+}

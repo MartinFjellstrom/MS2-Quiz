@@ -10,7 +10,7 @@ const checkNewHS = document.getElementById("check-new-hs-btn");
 function findHighscore(e) {
     e.preventDefault();
     if (window.innerWidth <= 460){
-        highScoreListContainer.classList.add("high-scores-list-popup")
+        highScoreListContainer.classList.add("high-scores-list-popup");
         highScoreSettingContainer.style.display = "none";
         checkNewHS.style.display = "block";
     }
@@ -29,7 +29,7 @@ function findHighscore(e) {
                 return b.score - a.score;
             });
             displayedHighscore.splice(5);
-        };
+        }
     }
     highScoresList.innerHTML = displayedHighscore
         .map(function (newScore) {
@@ -39,7 +39,7 @@ function findHighscore(e) {
 }
 
 function checkNewHighSore(){
-    highScoreListContainer.classList.remove("high-scores-list-popup")
+    highScoreListContainer.classList.remove("high-scores-list-popup");
         highScoreSettingContainer.style.display = "flex";
         checkNewHS.style.display = "none";
 }

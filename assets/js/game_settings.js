@@ -1,5 +1,5 @@
-let gameSettings = document.getElementById("game-settings");
-let playBtn = document.getElementById("play-btn");
+const gameSettings = document.getElementById("game-settings");
+const playBtn = document.getElementById("play-btn");
 let maxQuestions = 5;
 let difficulty = "easy";
 let category = 12;
@@ -8,7 +8,7 @@ function handleSettings(){
     pickDifficulty();
     pickMaxQuestions();
     pickCategory();
-};
+}
 
 function pickDifficulty() {
   x = document.getElementById("difficulty").selectedIndex;
