@@ -305,7 +305,7 @@ input::placeholder {
 footer {
     width: 100vw;
     position: absolute;
-    top: 80vh;
+    top: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -369,36 +369,59 @@ footer {
     #modal-frame {
         transform: rotate(90deg);
     }
+
     #feedback-title {
         margin-top: 2rem;
     }
+
     .form-small {
         width: 100%;
         text-align: center;
     }
-    .modal{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    border-radius: 1rem;
-    max-width: 39rem;
-    max-height: 50rem;
-    background-color: antiquewhite;
+
+    .modal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 1rem;
+        max-width: 39rem;
+        max-height: 50rem;
+        background-color: antiquewhite;
     }
+
     #close-btn i {
-    font-size: 2.8rem;
-    float: right;
-    margin-right: 3rem;
-    margin-top: -10rem;
-}
+        font-size: 2.8rem;
+        float: right;
+        margin-right: 3rem;
+        margin-top: -10rem;
+    }
 }
 
 @media (max-height: 670px) {
+    /* LANDING */
+
+    .btn {
+        font-size: 1.4rem;
+        width: 18rem;
+        border-radius: 1.5rem;
+        margin-bottom: 0.3rem;
+    }
+
+    #main-title {
+        font-size: 3rem;
+    }
+
+    #game-settings>label {
+        font-size: 1.5rem;
+    }
+
     footer {
-        bottom: 0;
+        z-index: -1;
+        flex-direction: row;
+        top: 88vh;
     }
 
     #contact-header {
@@ -412,6 +435,7 @@ footer {
         height: 5rem;
         transition: transform 300ms ease-in-out;
         margin-bottom: 0rem;
+        margin-left: 1rem;
     }
 
     #feedback-btn:hover {
@@ -425,5 +449,17 @@ footer {
 
     .container {
         max-height: 87vh;
+    }
+
+    /* INSTRUCTIONS */
+
+    .instructions-header {
+        display: none;
+    }
+    .instructions h3 {
+        font-size: 2rem;
+    }
+    .instructions li {
+        font-size: 1.3rem;
     }
 }

@@ -192,3 +192,18 @@
     }
 
 }
+
+@media (max-height: 665px) {
+    #question {
+        font-size: 2rem;
+    }
+    .choice-container {
+        max-height: 3.5rem;
+    }
+    .choice-prefix {
+        display: none;
+    }
+    .choice-text {
+        padding: 0.5rem;
+    }
+}

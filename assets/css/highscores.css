@@ -195,3 +195,24 @@
         width: 85vw;
     }
 }
+
+@media (max-height: 665px) {
+    #highscore-settings {
+        margin-bottom: 1rem;
+    }
+    .hs-header {
+        margin-top: 0.2rem;
+    }
+    .highscore-header {
+        margin-bottom: 0.3rem;
+    }
+    .high-score {
+        font-size: 2rem;
+    }
+    #high-scores-list {
+        min-height: 20rem;
+    }
+    #check-new-hs-btn {
+        margin-top: 0.3rem;
+    }
+}
