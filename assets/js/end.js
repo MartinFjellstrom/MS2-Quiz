@@ -1,3 +1,5 @@
+// Some of the code on this page is borrowed from a quiz tutorial that is linked in the README.md file
+
 //Variable for the username input text field
 const username = document.getElementById("username");
 //Variable for the save button

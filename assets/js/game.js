@@ -1,25 +1,42 @@
+// Most of the code in this file is borrowed from a quiz tutorial that is linked in the README.md file.
+
+// Variable for the questions h2 element
 const question = document.getElementById("question");
+// Variable to get the choice boxes in an array
 const choices = Array.from(document.getElementsByClassName("choice-text"));
+// Variable to set the question counter in the HUD
 const progressText = document.getElementById("progress-text");
+// Variable to set the score counter in the HUD
 const scoreText = document.getElementById("score");
+// Variable to target the progress bar filler
 const progressBarFull = document.getElementById("progress-bar-full");
+// Variable target the loader
 const loader = document.getElementById("loader");
+// Variable to target the game div
 const game = document.getElementById("game");
 
+// Variable to set the score given for each question
 const correctBonus = 10;
 
+// Variable to handle the displaying question 
 let currentQuestion = {};
+// Variable to determine if the current question is answered or not
 let acceptingAnswers = false;
+// Variable to keep track of the users score
 let score = 0;
+// Variable to keep track of shown questions
 let questionCounter = 0;
+// Variable to store avalible questions in an array
 let availableQuestions = [];
-
+// Variable to store fetched questions from the API
 let questions = [];
 
+//Changing the the global variables to conform with the game settings
 maxQuestions = localStorage.getItem("maxQuestions");
 difficulty = localStorage.getItem("difficulty");
 category = localStorage.getItem("category");
 
+// A function to fetch the questions from the API
 fetch(`https://opentdb.com/api.php?amount=40&category=${category}&difficulty=${difficulty}&type=multiple`)
     .then(function (res) {
         return res.json();
@@ -50,6 +67,7 @@ fetch(`https://opentdb.com/api.php?amount=40&category=${category}&difficulty=${d
         console.error(err);
     });
 
+// Function to start the game, get questions and handle the visibility of the game div and the loader
 function startGame() {
     questionCounter = 0;
     score = 0;
@@ -59,15 +77,14 @@ function startGame() {
     loader.classList.add("hidden");
 }
 
+// Function to get new questions and determin if the requsted amount of questions are answered.
 function getNewQuestion() {
     if (availableQuestions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
-        //Go to the end page
         return window.location.assign("end.html");
     }
     questionCounter++;
     progressText.innerText = `Question ${questionCounter}/${maxQuestions}`;
-    // Update the progress bar
     progressBarFull.style.width = `${(questionCounter / maxQuestions) * 100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -84,6 +101,7 @@ function getNewQuestion() {
     acceptingAnswers = true;
 }
 
+// Function to determin if the selected answer is corrent or incorrect
 choices.forEach(function (choice) {
     choice.addEventListener("click", function (e) {
         if (!acceptingAnswers) return;
@@ -115,6 +133,7 @@ choices.forEach(function (choice) {
     });
 });
 
+// Function to update the score in the HUD
 function incrementScore(num) {
     score += num;
     scoreText.innerText = score;
