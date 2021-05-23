@@ -7,17 +7,24 @@
     <meta name="Description"
         content="Welcome to Quizology! A fun quiz game to test your knowledge in a wide selection of subjects" />
     <title>Quizology</title>
+    <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/12d272a545.js" crossorigin="anonymous"></script>
+    <!-- emailJS -->
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/education1.png" type="image/png">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
+<!-- Some of the code in this file is borrowed from a quiz tutorial (Link in README) -->
+
 <body>
     <div class="container">
+        <!-- border image -->
         <img src="assets/images/outline_frame.png" alt="borderFrame" class="frame">
         <div class="flex-center flex-column box-border">
             <h1 id="main-title">Quizology</h1>
+            <!-- Game setting form -->
             <form id="game-settings">
                 <label for="difficulty">Difficulty</label>
                 <select id="difficulty" name="difficulty">
@@ -40,12 +47,14 @@
                     <option class="category-option" value="17">Science & Nature</option>
                 </select>
             </form>
+            <!-- Navigation buttons -->
             <a href="game.html" class="btn" id="play-btn" onclick='handleSettings()'>Play</a>
             <a href="instructions.html" class="btn">Instructions</a>
             <a href="highscores.html" class="btn">Highscores</a>
         </div>
     </div>
     <div>
+        <!-- Modal -->
         <div id="modal-container">
             <div class="modal">
                 <img src="assets/images/outline_frame_horizontal.png" id="modal-frame" alt="modal frame">
@@ -64,6 +73,7 @@
             </div>
         </div>
     </div>
+    <!-- Feedback footer -->
     <footer>
         <h3 id="contact-header">Send Your Feedback!</h3>
         <button id="feedback-btn" rel="noopener"><img src="assets/images/quill1.png" alt="quill" id="quill"></button>

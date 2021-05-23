@@ -7,13 +7,17 @@
     <meta name="Description"
         content="Check your high scores and compare them to previous attempts" />
     <title>Quizology - High Scores</title>
+    <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/education1.png" type="image/png">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/highscores.css">
 </head>
 
+<!-- Some of the code in this file is borrowed from a quiz tutorial (Link in README) -->
+
 <body>
     <div class="container blackboard">
+        <!-- High score settings -->
         <div id="highscore-settings">
             <form id="highscore-form">
                 <h2 class="hs-header">Number Of Questions</h2>
@@ -56,11 +60,14 @@
             </form>
         </div>
         <div id="high-scores" class="flex-center flex-column">
+            <!-- high scores list -->
             <div id="high-scores-list-container">
                 <h1 id="final-score" class="highscore-header">High Scores</h1>
                 <ul id="high-scores-list"></ul>
+                <!-- Check new high scores button -->
                 <button id="check-new-hs-btn" onclick="checkNewHighSore()">Check Other High Scores</button>
             </div>
+            <!-- Back button -->
             <a href="index.html" class="blackboard-btn">- Back to Home -</a>
         </div>
     </div>
