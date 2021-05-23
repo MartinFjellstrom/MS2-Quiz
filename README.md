@@ -4,14 +4,13 @@ Link to [Quizology](https://martinfjellstrom.github.io/MS2-Quiz/)
  site
 
 This is an online quiz game for users intressted in trivia. The game apeals to a wide variety of users as it covers a selection of subjects suited to different intrests.
-![](mockup pic)
+![](assets/images/readme_img/site_responsive.png)
 
 # Table of Contents
 
 - [UX](#ux)
     - [User Stories](#user-stories)
     - [Design](#design)
-    - [Wireframes](#wireframes)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
@@ -96,12 +95,6 @@ as a fallback font should the font not be supported by the user’s browser. The
 
 All the imagery on the site was chosen to enhance the user experience by providing a consistent and fun theme throughout. The background image is there to set the theme of the game and gives the user a feeling of being in a classic educational environment. This image was the starting point for the rest of the styling across the site and influenced other small details. The game container image is an open book to further enhance the theme, and the high scores background image is a blackboard to fit the educational feel.
 
-## Wireframes
-
-[Wireframes PDF]()
-
-Note: The final product looks very different from the original wireframes since my ideas for the project changed with time.
-
 # Features
 
 ## Existing Features
@@ -166,7 +159,7 @@ Note: The final product looks very different from the original wireframes since 
 # Testing
 
 ## Code Validation
-For testing W3C Markup Validation Service was used to validate the HTML code and W3C CSS Validation Service was used to validate the CSS code. 
+For testing W3C Markup Validation Service was used to validate the HTML code, W3C CSS Validation Service was used to validate the CSS code and JSHint was used to test the JavaScript code.
 
 ### **HTML**
 
@@ -432,7 +425,7 @@ For testing W3C Markup Validation Service was used to validate the HTML code and
 
 **Quiz game engine** 
 
-[Quiz tutorail](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) Used this tutorial as a template for my Quizology site.
+[Quiz tutorial](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) - Used this tutorial as a template for my Quizology site.
 
 **EmailJS**
 
@@ -440,11 +433,8 @@ For testing W3C Markup Validation Service was used to validate the HTML code and
 
 **Loader**
 
-[Loader](https://loading.io/css/) - borrowed some code to get a loader when starting the game.
+[Loader](https://loading.io/css/) - Borrowed some code to get a loader when starting the game.
 
 # Acknowledgements
 
 A big thank you to my partner Melissa for her support throughout this project.
-
-Thanks to the tutors at Code Institute and Student Care service for their support.
-
