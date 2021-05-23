@@ -170,12 +170,83 @@ For testing W3C Markup Validation Service was used to validate the HTML code and
 
 ### **HTML**
 
+#### Instructions.html code errors:
+![](assets/images/readme_img/intructions_html_pre.png)
+
+#### Instructions.html fixes:
+* Removed a closing tag from the img element and added an alt attribute.
+
+#### Index.html code errors:
+![](assets/images/readme_img/index_html_pre.png)
+
+#### Index.html fixes:
+* Removed the type attribute from the emailJS link.
+* Removed a closing tag from the img element and added an alt attribute.
+* Removed the required attribute on the "contact_number" input element.
+* Added an empty href attribute on to the "feedback-btn".
+
+#### Highscores.html code errors:
+![](assets/images/readme_img/highscore_html_pre.png)
+
+#### Highscores.html fixes:
+* Removed the action attribute from the form
+
+#### End.html code errors:
+![](assets/images/readme_img/end_html_pre.png)
+
+#### End.html fixes:
+* Removed a closing tag from the img element and added an alt attribute.
 
 ### **CSS**
 
+#### Highscore.css code errors:
+![](assets/images/readme_img/highscore_css_pre.png)
+
+#### Highscore.css fixes:
+* Removed the properties on line 80 and 137. 
+* Added rem as a measurement after the font size value on line 187.
+
+#### Game.css code errors:
+![](assets/images/readme_img/game_css_pre.png)
+#### Game.css fixes:
+* Removed the background-color property from line 23
 
 ### **JavaScript**
 
+#### Contact.js code errors:
+![](assets/images/readme_img/contact_js_pre.png)
+
+#### Contact.js fixes:
+* Added a semicolon in a couple of places.
+* Added a vertical bar on line 12 where it was missing.
+
+#### End.js code errors:
+![](assets/images/readme_img/end_js_pre.png)
+
+#### End.js fixes:
+* Removed one unnecessary semicolon.
+* Removed an unused variable  .
+
+#### Game_settings.js code errors:
+![](assets/images/readme_img/game_settings_js_pre.png)
+
+#### Game_settings.js fixes:
+* Removed one unnecessary semicolon.
+
+#### Game.js code errors:
+![](assets/images/readme_img/game_js_pre.png)
+
+#### Game.js fixes:
+* Removed 7 unnecessary semicolons.
+* Added a semicolon where it was missing. 
+* Changed from bracket notation to dot notation on two separate  places.
+
+#### Highscores.js code errors:
+![](assets/images/readme_img/highscores_js_pre.png)
+
+#### Highscores.js Fixes:
+* Removed an unnecessary semicolon.
+* Added two semicolons where needed.
 
 ## Testing User Stories
 
