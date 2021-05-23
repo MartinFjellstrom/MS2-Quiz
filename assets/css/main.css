@@ -479,6 +479,6 @@ footer {
         height: 5.5rem;
     }
         footer {
-        bottom: 0;
+        top: 85vh;
     }
 }

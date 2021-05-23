@@ -155,7 +155,7 @@ Note: The final product looks very different from the original wireframes since 
 * [Git](https://git-scm.com/) – used for version control of the code.
 * [W3 Jigsaw](https://jigsaw.w3.org/css-validator/) – used to validate the CSS code.
 * [W3C validator](https://validator.w3.org/) – used to validate the HTML code.
-* [Java validator]() --------
+* [JShint validator](https://jshint.com/) used to validate the JavaScript code.
 * [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) – used to debug and test code. Also used for performance testing with lighthouse.
 * [PicPick](https://picpick.app/) – used to screen capture pages for use in the README file.
 * [Eye Dropper](https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka) – used to get colour from picture.
