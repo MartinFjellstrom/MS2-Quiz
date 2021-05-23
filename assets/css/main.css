@@ -413,6 +413,7 @@ footer {
     }
 
     #quill {
+        width: 5.5rem;
         height: 5.5rem;
     }
 
@@ -465,6 +466,7 @@ footer {
     }
 
     #quill {
+        width: 4rem;
         height: 4rem;
     }
 
