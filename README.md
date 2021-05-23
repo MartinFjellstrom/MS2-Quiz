@@ -421,6 +421,8 @@ For testing W3C Markup Validation Service was used to validate the HTML code, W3
 
 * Quill icon - https://thenounproject.com/term/quill-pen/1053377/
 
+* Favicon - https://freepngimg.com/png/12770-education-png/icon
+
 ## Code 
 
 **Quiz game engine** 
