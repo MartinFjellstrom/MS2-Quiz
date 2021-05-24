@@ -427,7 +427,8 @@ For testing W3C Markup Validation Service was used to validate the HTML code, W3
 
 **Quiz game engine** 
 
-[Quiz tutorial](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) - Used this tutorial as a template for my Quizology site.
+* [Quiz tutorial youtube](https://www.youtube.com/playlist?list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx) - Used this tutorial as a template for my Quizology site.
+* [Quiz tutorial github](https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript)
 
 **EmailJS**
 
